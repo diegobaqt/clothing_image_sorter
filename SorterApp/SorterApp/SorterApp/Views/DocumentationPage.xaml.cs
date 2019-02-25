@@ -11,7 +11,7 @@ namespace SorterApp.Views
 			InitializeComponent ();
             var browser = new WebView
             {
-                Source = "https://github.com/diegobaqt/geekcore.github.io/blob/master/README.md"
+                Source = "https://github.com/diegobaqt/clothing_image_sorter/blob/master/README.md"
             };
 
             Content = browser;
