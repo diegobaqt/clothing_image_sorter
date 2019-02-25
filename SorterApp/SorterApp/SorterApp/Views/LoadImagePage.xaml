@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SorterApp.Views.LoadImagePage"
+             Title="Machine Learning">
+    <ContentPage.Content>
+        <StackLayout Padding="5" VerticalOptions="FillAndExpand">
+            <ActivityIndicator x:Name="Loading" IsRunning="False" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20" />
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Spacing="5">
+                <StackLayout x:Name="LayoutClass" BackgroundColor="DimGray" Padding="2" HorizontalOptions="Start">
+                    <Label x:Name="LabelClass" FontAttributes="Bold" HorizontalOptions="Start" TextColor="{StaticResource BackgroudColor}" />
+                </StackLayout>
+                <Image x:Name="Image"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       AnchorX="500"
+                       AnchorY="500" />
+                <Label x:Name="ImageName" />
+            </StackLayout>
+
+            <Grid VerticalOptions="EndAndExpand" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton x:Name="Reset"
+                             Grid.Column="0" 
+                             Source="ic_reset" 
+                             HeightRequest="30" 
+                             BackgroundColor="{StaticResource SecundaryColor}" />
+
+                <ImageButton x:Name="TakePhoto"
+                             Grid.Column="1" 
+                             Source="ic_cam" 
+                             HeightRequest="30" 
+                             BackgroundColor="{StaticResource SecundaryColor}" />
+                
+                <ImageButton x:Name="PickPhoto"
+                             Grid.Column="2" 
+                             Source="ic_gallery" 
+                             HeightRequest="30" 
+                             BackgroundColor="{StaticResource SecundaryColor}"/>
+
+                <ImageButton x:Name="Send"
+                             Grid.Column="3" 
+                             Source="ic_send" 
+                             HeightRequest="30" 
+                             BackgroundColor="{StaticResource SecundaryColor}" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

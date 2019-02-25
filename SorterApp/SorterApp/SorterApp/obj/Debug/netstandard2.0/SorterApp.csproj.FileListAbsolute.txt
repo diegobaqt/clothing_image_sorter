@@ -1,0 +1,15 @@
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\bin\Debug\netstandard2.0\SorterApp.deps.json
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\bin\Debug\netstandard2.0\SorterApp.dll
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\bin\Debug\netstandard2.0\SorterApp.pdb
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\Views\DocumentationPage.xaml.g.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\Views\LoadImagePage.xaml.g.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.csproj.CoreCompileInputs.cache
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.AssemblyInfoInputs.cache
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.AssemblyInfo.cs
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.dll
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.pdb
+C:\Users\PC-78412\source\repos\SorterApp\SorterApp\SorterApp\obj\Debug\netstandard2.0\SorterApp.csprojAssemblyReference.cache
