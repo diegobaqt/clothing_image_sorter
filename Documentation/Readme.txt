@@ -1,0 +1,1 @@
+Esta sección contiene el Poster y el Paper relacionado con el proyecto
