@@ -60,7 +60,7 @@ using SorterServices.Models;
             WriteLiteral("\r\n<div row style=\"text-align: center; padding-top: 10px\">\r\n    ");
             EndContext();
             BeginContext(103, 28, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9dea4377cdb84b2da893e0cb1d17257e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "60b9b9a7e585434892f54f12e896216e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

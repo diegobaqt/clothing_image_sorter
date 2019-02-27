@@ -27,3 +27,4 @@ C:\Users\PC-78412\source\repos\SorterServices\SorterServices\obj\Release\netcore
 C:\Users\PC-78412\source\repos\SorterServices\SorterServices\obj\Release\netcoreapp2.1\SorterServices.dll
 C:\Users\PC-78412\source\repos\SorterServices\SorterServices\obj\Release\netcoreapp2.1\SorterServices.pdb
 C:\Users\PC-78412\source\repos\SorterServices\SorterServices\obj\Release\netcoreapp2.1\SorterServices.csproj.CopyComplete
+C:\Users\PC-78412\source\repos\SorterServices\SorterServices\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs

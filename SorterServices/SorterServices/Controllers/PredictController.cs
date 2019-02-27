@@ -22,7 +22,7 @@ namespace SorterServices.Controllers
         #endregion
 
         #region Post 
-        [HttpPost()]
+        [HttpPost]
         public async Task<IActionResult> PredictClassImage(ImageViewModel imageViewModel)
         {
             try

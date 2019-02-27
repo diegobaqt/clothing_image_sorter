@@ -2,17 +2,23 @@
 using SorterServices.Services.Interfaces;
 using System;
 using System.IO;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace SorterServices.Services
 {
     public class PredictService : IPredictService
     {
+        private const string HttpUrl = "MODEL_ENDPOINT";
+        private const string HttpsUrl = "BASE_URL";
+        private readonly HttpClient _client = new HttpClient { BaseAddress = new Uri(HttpUrl) };
+
         #region Post
         public async Task<PredictResponseViewModel> PredictClassImageAsync(ImageViewModel imageViewModel)
         {
             var url = Path.Combine("wwwroot", "files", "images");
-
             Directory.CreateDirectory(url);
 
             var path = Path.Combine(url, imageViewModel.Image.FileName);
@@ -23,10 +29,55 @@ namespace SorterServices.Services
                 await imageViewModel.Image.CopyToAsync(stream);
             }
 
-            // TODO: Return real class
-            var predictResponseViewModel = new PredictResponseViewModel { Response = GetClass() };
+            var imagePath = HttpsUrl + "/files/images/" + imageViewModel.Image.FileName;
+            var result = await Predict(imagePath);
 
+            var predictResponseViewModel = new PredictResponseViewModel { Response = FormatResult(result) };
             return predictResponseViewModel;
+        }
+
+        public async Task<string> Predict(string url)
+        {
+            var urlViewModel = new UrlViewModel
+            {
+                url = url
+            };
+
+            try
+            {
+                var json = JsonConvert.SerializeObject(urlViewModel);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await _client.PostAsync(_client.BaseAddress + "predict", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = response.Content.ReadAsStringAsync().Result;
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "Error";
+        }
+        #endregion
+
+        #region Utils
+        private static string FormatResult(string result)
+        {
+            switch (result)
+            {
+                case "shoe":
+                    return "Shoes";
+                case "dress":
+                    return "Dresses";
+                case "pants":
+                    return "Pants";
+                case "outerwear":
+                    return "Outerwear";
+                default:
+                    return "No Classified";
+            }
         }
 
         private static string GetClass()
